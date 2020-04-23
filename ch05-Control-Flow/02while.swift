@@ -1,0 +1,40 @@
+/////////////////////////////////////
+// while
+////////////////////////////////////
+
+var final = 5;
+var i = 0;
+
+while i < final {
+  print(i)
+  i += 1
+}
+// 0
+// 1
+// 2
+// 3
+// 4
+
+print(i)
+// 5
+
+///////////////////////////////////////////////////////////
+// Repeat-While ---- js : do-while
+///////////////////////////////////////////////////////////
+
+
+final = 6;
+i = 7;
+
+while i < final {
+  print("hello")
+}
+
+// will never print
+
+repeat {
+  print("hello")
+} while i < final
+
+//. it will print "hello" once 
+
