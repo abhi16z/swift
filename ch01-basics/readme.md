@@ -259,7 +259,7 @@ print(Age.max)
 ## Boolean
 
 
-**true and false**
+> true and false
 
 **automatic type conversions are not allowed**
 
