@@ -1,4 +1,1 @@
-# LearningSwift
-Swift - ios development - beginner
-
-[Chapter 1](https://github.com/abhi16z/LearningSwift/blob/master/ch01-basics/readme.md)
+[SEE HERE](https://github.com/abhi16z/swift/wiki)
