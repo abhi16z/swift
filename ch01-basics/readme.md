@@ -1,6 +1,6 @@
 # Basics
 
-``` 
+```swift
 var name: String;
 
 var a: Int, b: String;
@@ -17,7 +17,7 @@ print(name, a, b, c, d)
 ```
 > **Typesafety is strictly followed by swift**
 
-```
+```swift
 let con = 100;
 ```
 > con is constant now and cannot be assigned a new value here*
@@ -25,7 +25,7 @@ let con = 100;
 
 ## printing
 
-```
+```swift
 print("Hello")
 print("There")
 
@@ -34,7 +34,7 @@ print("Hello"); print("There")
 
 #### to print them in same line, we can 
 
-```
+```swift
 print("hello", terminator: " ")
 print("There")
 ```
@@ -42,7 +42,7 @@ print("There")
 
 ## values in string (interpolation)
 
-```
+```swift
 let fruits = 100
 print("I have \(fruits) fruits")
 ```
@@ -51,7 +51,7 @@ print("I have \(fruits) fruits")
 
 > **semicolons are only manadatory when it has to separate two statements in the same line, otherwise it is optional
 
-```
+```swift
 print("helo") // is okay
 print("Hello"); // is also okay
 print("Hello"); print("there") // manadatory
@@ -70,7 +70,7 @@ print("Hello"); print("there") // manadatory
 
 > 8 bit is represented as UInt8, 32 bit as Int32
 
-```
+```swift
 print(UInt8.min, UInt8.max)
 // 0 255
 
@@ -86,7 +86,7 @@ print(Int32.min, Int32.max)
 
 ## UInt - Unsigned integers
 
-```
+```swift
 print(UInt32.min, UInt32.max)
 // 0 4294967295
 
@@ -96,7 +96,7 @@ print(UInt32.min, UInt32.max)
 > on 32 bit platform, UInt is same as UInt32
 > on 64 bit platform, UInt is same as UInt64
 
-```
+```swift
 print(UInt.max)
 print(UInt64.max)
 ```
@@ -111,12 +111,12 @@ print(UInt64.max)
 
 > **when both types are appropriate, there double is preferred**
 
-```
+```swift
 var flotOrDoub = 42.0;
 ```
 > **if we don't specify the type of float or double then by default swift assumes it is double **
 
-```
+```swift
 var combinedFloatInt = 3 + 0.14
 ```
 > **automatically the type of combinedFloatInt is inferred as double **
@@ -128,7 +128,7 @@ var combinedFloatInt = 3 + 0.14
 > **octa** : 0o
 > **hexa:** 0x
 
-```
+```swift
 print (0b10001)
 print(17)
 print(0o21)
@@ -140,7 +140,7 @@ print(0x11)
 
 ## exponential representation
 
-```
+```swift
 print (1.25e2)
 ```
 
@@ -154,7 +154,7 @@ print (0x9p2)
 
 **0xNpn means ((N to dec) * 2 ^ n) **
 
-```
+```swift
  print(1_000_000)
  print(1_1000_000)
  print(1_009990_000)
@@ -162,7 +162,7 @@ print (0x9p2)
 
 > **numbers acn be separated by _ to increase readability**
 
-```
+```swift
  print(1_000_000.0000)
 
  print(1_000_000.99_0000_666)
@@ -175,7 +175,7 @@ print (0x9p2)
 **If value is not compatible with given type then compiler will report an error**
 
 
-```
+```swift
 print(UInt8.max + 1)
 // error: arithmetic operation '255 + 1' (on type 'UInt8') results in an overflow
 
@@ -190,7 +190,7 @@ print(int16 + UInt16(int8))
 ```
 **even two numbers of different types cannot be operated together without type Conversions**
 
-```
+```swift
 print(UInt8(int16))
 //error: not enough bits to represent
 
@@ -202,7 +202,7 @@ print(newInt8 + newUInt8)
 
 print(newInt8 + Int8(newUInt8))
 ```
-```
+```swift
 print(UInt8(-20))
 ```
 **if value is negative it cannot be converted to unsigned number**
@@ -219,7 +219,7 @@ print(Int8(245))
 
 **conversion between Int and Float must be explicit**
 
-```
+```swift
 var aInt: Int = 20
 
 var aFloat: Float = 10.33;
@@ -229,7 +229,7 @@ var aFloat: Float = 10.33;
 ```
 > but following will not be an error
 
-```
+```swift
 print(3 + 3.55)
 print(aInt + Int(aFloat))
 //=> 30
@@ -246,7 +246,7 @@ print(aFloat + Float(aInt))
 **Alternative name for an existing type**
 *useful when we want to give meanings to types for a particular context*
 
-```
+```swift
 typealias Age = Int8;
 
 var myAge : Age = 15;
@@ -263,7 +263,7 @@ print(Age.max)
 
 **automatic type conversions are not allowed**
 
-```
+```swift
 var hasError = true;
 
 if hasError {
@@ -274,7 +274,7 @@ if hasError {
 > in other languages, non zero value is treated as true and 0 as false,
 > In swift it will give an error
 
-```
+```swift
 let hasPassed = 1;
 
 if hasPassed {
